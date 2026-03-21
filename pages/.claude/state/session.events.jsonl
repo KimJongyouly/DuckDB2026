@@ -1,0 +1,482 @@
+{"id":"event-000001","type":"session.start","ts":"2026-03-19T16:55:06Z","state":"initialized"}
+{"id":"event-000002","type":"tool.bash","ts":"2026-03-19T16:56:26Z","state":"initialized","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/"}}
+{"id":"event-000003","type":"tool.write","ts":"2026-03-19T16:58:41Z","state":"initialized","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04_SQL기초.md"}}
+{"id":"event-000004","type":"session.stop","ts":"2026-03-19T16:58:50Z","state":"stopped"}
+{"type":"session.resume","ts":"2026-03-21T04:35:26Z","state":"initialized","data":{"cc_session_id":"9908ef61-5002-428f-aaae-b4e8aed9daec","method":"mapping"}}
+{"id":"event-000001","type":"session.start","ts":"2026-03-21T04:35:26Z","state":"initialized"}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T04:36:55Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/ 2>/dev/null | head -5; echo "---"; ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/ 2>/dev/null | head -5"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T04:37:08Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/*/pages/02_설치와환경구성.md 2>/dev/null"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T04:37:17Z","state":"","data":{"command":"PAGES="/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages"
+for f in 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 19; do
+  file=$(ls "$PAGES"/${f}_*.md 2>/dev/null | head -1)
+  if [ -n "$file"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:14:59Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+echo "PAGES=$PAGES"
+tail -5 "$PAGES/02_설치와환경구성.md""}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:15:11Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+for f in 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 19; do
+  echo "=== ${f} ===" 
+  ls "$PAGES"/${f}_*.md 2>/dev/"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:15:41Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/02_설치와환경구성.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB를 다양한 환경에 설치하고 첫 번째 쿼리를 실행하는 방법을 살펴보았다. CLI, Python"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:16:01Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/03_duckdb에_연결하기.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB의 연결 방식을 체계적으로 살펴보았다. 인메모리 연결은 임시 분석과 파이프라인 중간"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:16:18Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/04_SQL기초.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB에서 데이터를 조회하고 분석하는 데 필요한 SQL 기초를 전반적으로 다루었다. SELECT의 기"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:16:38Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/05_데이터타입.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB가 지원하는 다양한 데이터 타입을 살펴보았다. 정수·부동소수점·DECIMAL 등 숫자 타입의 차"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:17:56Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/06_함수완전정복.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB 분석 작업에서 가장 자주 쓰이는 내장 함수들을 카테고리별로 정리했다. 문자열 처리부터 날짜 "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:18:25Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/07_DDL과DML.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB에서 데이터베이스 구조를 만들고 관리하는 DDL과 데이터를 조작하는 DML의 전 범위를 살펴"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:18:50Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/08_csv.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB가 CSV 파일을 읽고 쓰는 다양한 방법을 살펴보았다. `read_csv()`의 자동 스키마 감지 "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:19:08Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/09_json.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB에서 JSON 데이터를 다루는 전 과정을 살펴보았다. `->` 연산자로 중첩 구조를 탐색하고, `"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:19:25Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/10_parquet.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 Parquet 포맷의 핵심 구조—Row Group, Column Chunk, Footer—와 DuckD"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:19:42Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/11_다중파일_파티션.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB가 수백 개의 파일을 마치 하나의 테이블처럼 다루는 방법을 살펴보았다. 와일드카드와 `un"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:19:57Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/12_레이크하우스.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB를 레이크하우스 아키텍처의 쿼리 엔진으로 활용하는 방법을 살펴보았다. Apache Iceber"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:20:13Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/13_Python_duckdb.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 Python 환경에서 DuckDB를 활용하는 다양한 방법을 살펴보았다. 기본 Connecti"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:44:58Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/14_CLI심화.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB CLI를 단순한 대화형 도구를 넘어 자동화 스크립팅 플랫폼으로 활용하는 방법을 살펴보았다. H"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:45:19Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/15_기타_클라이언트.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 Python과 CLI 이외의 언어와 환경에서 DuckDB를 활용하는 방법을 살펴보았다. Java, N"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:47:15Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/16_핵심extension의 활용.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB의 확장 시스템과 핵심 확장들을 살펴보았다. `httpfs`로 S3·GCS의 "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:47:43Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/17_데이터베이스연동.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB의 ATTACH 명령을 통해 PostgreSQL, MySQL, SQLite를 로컬 테이블처"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T05:48:32Z","state":"","data":{"command":"PAGES=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1)
+
+cat >> "$PAGES/19_설정과튜닝.md" << 'EOF'
+
+---
+
+## 마치며
+
+이 장에서는 DuckDB의 핵심 설정 파라미터와 Secrets Manager를 살펴보았다. `threads`와 `mem"}}
+{"id":"event-000001","type":"session.stop","ts":"2026-03-21T05:48:40Z","state":"stopped"}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:43:48Z","state":"","data":{"command":"find /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/ -type f -name "*.md" | head -30"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:44:13Z","state":"","data":{"command":"grep -n "example\|http" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/08_csv.md | head -30"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:44:13Z","state":"","data":{"command":"grep -n "example\|http" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/09_json.md | head -30"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:44:30Z","state":"","data":{"command":"grep -rn "https://" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/*.md | grep -v "example.com" | grep -v "duckdb.org" | grep -v "github.com/duckdb" | grep -v "install.duckdb.org" | grep -v"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:44:38Z","state":"","data":{"command":"grep -rn "d37ci6vzurychx\|cloudfront\|observablehq\|duckdb.r-universe" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/*.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:44:52Z","state":"","data":{"command":"grep -rn "\.csv\|\.parquet\|\.json\|\.xlsx\|\.zst\|\.gz" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/*.md | grep -i "http\|url\|download\|data" | head -40"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:45:02Z","state":"","data":{"command":"ls -la /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/ | grep "\.md$" | wc -l"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:45:06Z","state":"","data":{"command":"for file in /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/[0-9]*.md; do
+  echo "=== $(basename "$file") ==="
+  grep -n "https://\|http://" "$file" 2>/dev/null | head -20
+done"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:45:13Z","state":"","data":{"command":"grep -n "\.csv\|\.parquet\|\.json\|\.xlsx\|\.tsv\|\.xls\|\.gz\|\.zst\|\.zip" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/16_핵심extension의 활용.md | head -20"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:45:18Z","state":"","data":{"command":"find /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages -name "16*.md" -exec grep -n "\.csv\|\.parquet\|\.json\|\.xlsx" {} +"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:45:21Z","state":"","data":{"command":"find /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages -name "*.md" -type f | sort"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:46:04Z","state":"","data":{"command":"find /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages -name "*.md" -type f | sort"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:46:11Z","state":"","data":{"command":"cat /home/youly/.claude/projects/-home-youly-Documents-Book-02-DuckDB---------DuckDB-pages/9908ef61-5002-428f-aaae-b4e8aed9daec/tool-results/toolu_016YBRBsiG3Q23Mt744u9jdx.txt"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:47:34Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/pages 2>/dev/null | head -1 | sed 's|/pages||')/assets
+mkdir -p "$ASSETS"/{csv/region,csv/monthly,parquet/data,parquet/hive,json,xlsx}
+echo "Asset"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:47:44Z","state":"","data":{"command":"ASSETS="/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/assets"
+ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+echo "$ASSETS"
+ls "$ASSETS""}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:49:14Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+mkdir -p "$ASSETS/csv/region" "$ASSETS/csv/monthly" "$ASSETS/parquet/data" "$ASSETS/parquet/hive" "$ASSETS/json"
+
+# "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:49:38Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+duckdb << SQL
+
+-- ============================================================
+-- Parquet 파일 생성
+-- ================"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:49:51Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+mkdir -p "$ASSETS/parquet/hive/year=2024/region=서울" \
+         "$ASSETS/parquet/hive/year=2024/region=부산" \
+        "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:50:06Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# JSON/NDJSON 파일 생성 (Python 없이 DuckDB + jq 활용)
+duckdb << 'SQL'
+
+-- events.ndjson
+COPY (
+  SELECT
+    id,
+    ['logi"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:50:18Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+duckdb << SQL
+
+-- events.ndjson
+COPY (
+  SELECT
+    i AS id,
+    ['login','logout','purchase','view','click','searc"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:50:38Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# Excel 파일 생성 (DuckDB spatial/excel extension)
+duckdb << SQL
+INSTALL excel;
+LOAD excel;
+COPY (SELECT * FROM '$ASSET"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:50:48Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# NYC 택시 데이터 다운로드 (실제 공개 데이터)
+echo "NYC 택시 데이터 다운로드 중..."
+duckdb << SQL
+INSTALL httpfs; LOAD httpfs;
+-- 전체는 너무 크므로 "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:51:36Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# 추가 유용한 파일들 생성
+duckdb << SQL
+
+-- 압축 CSV 생성
+COPY (SELECT * FROM '$ASSETS/csv/sales.csv')
+  TO '$ASSETS/csv/sales.cs"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:51:51Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+duckdb << SQL
+-- customers_raw.parquet 재생성 (문법 수정)
+COPY (
+  SELECT
+    customer_id,
+    'customer_'||customer_id AS"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:52:32Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+echo "=== assets 디렉토리 구조 ==="
+find "$ASSETS" -type f | sort | while read f; do
+  size=$(du -sh "$f" 2>/dev/null | c"}}
+{"id":"event-000001","type":"session.stop","ts":"2026-03-21T09:52:44Z","state":"stopped"}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:57:34Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# 챕터별 디렉토리 생성
+for ch in \
+  "ch02_설치와환경구성" \
+  "ch04_SQL기초" \
+  "ch05_데이터타입" \
+  "ch06_함수완전정복" \
+  "ch07_DDL과DML" \"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:57:59Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+SRC="$ASSETS"  # 기존 format별 디렉토리를 source로 사용
+
+# ── ch02: 설치와 환경구성 (첫 쿼리용 간단 파일)
+cp "$SRC/csv/data.csv"       "$ASSET"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:58:21Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+SRC="$ASSETS"
+
+# ── ch12: 레이크하우스 (Iceberg/Delta 연동, 대량 적재)
+cp "$SRC/parquet/customers_raw.parquet"  "$ASSETS/ch12_레이"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:58:32Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+SRC="$ASSETS"
+
+# ch22 디렉토리명 통일 (분析 vs 분析 인코딩 문제)
+CH22=$(ls -d "$ASSETS"/ch22_* 2>/dev/null | head -1)
+echo "ch22 실제 "}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:58:40Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# 기존 포맷별 디렉토리 제거
+rm -rf "$ASSETS/csv" "$ASSETS/parquet" "$ASSETS/json" "$ASSETS/xlsx"
+
+# 최종 구조 출력
+echo "=== 챕터별 ass"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:59:21Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# 중복 ch22 제거 (분析 vs 분析)
+ls -d "$ASSETS"/ch22_* 2>/dev/null
+# 잘못된 것 제거 (분析 = 析 포함된 것)
+find "$ASSETS" -maxdepth 1 -ty"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T09:59:34Z","state":"","data":{"command":"ASSETS=$(ls -d /home/youly/Documents/Book/02_DuckDB/*/assets 2>/dev/null | head -1)
+
+# 析 (中文) 포함된 잘못된 디렉토리 삭제
+rm -rf "$ASSETS/ch22_데이터분析_파이프라인"
+
+# 최종 파일 수 확인
+echo "총 파일 수: $(find "$ASSETS" -type f | w"}}
+{"id":"event-000001","type":"session.stop","ts":"2026-03-21T09:59:48Z","state":"stopped"}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:13:42Z","state":"","data":{"command":"cd "/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages" && \
+mv "01_들어가며.md"           "00_들어가며.md" && \
+mv "02_설치와환경구성.md"      "01_설치와환경구성.md" && \
+mv "03_duckdb에_연결하기.md"   "02_duckdb에_연결하기."}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:15:53Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/TOC.md"}}
+{"id":"event-000001","type":"session.stop","ts":"2026-03-21T22:16:02Z","state":"stopped"}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:23:24Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/00-ch.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:23:29Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/ 2>/dev/null || ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:23:39Z","state":"","data":{"command":"ls -la "/home/youly/Documents/Book/02_DuckDB/" | head -20"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:23:44Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/00-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:23:56Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:11Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:11Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:12Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/00-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:33Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/20-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:34Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:35Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:42Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/00-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:42Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:53Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:54Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/01-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:24:54Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:09Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:13Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:24Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:29Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:32Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:36Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/20-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:38Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/01-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:43Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:46Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:59Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-5.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:25:59Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:14Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/01-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:16Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-6.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:17Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:21Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:23Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/20-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:24Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:34Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/01-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:37Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-7.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:26:40Z","state":"","data":{"command":"python3 -c "
+import os
+path = '/home/youly/Documents/Book/02_DuckDB/'
+for name in os.listdir(path):
+    print(repr(name))
+""}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:43Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-5.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:48Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/02-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:52Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:26:53Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-5.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:00Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:02Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/02-1.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:27:06Z","state":"","data":{"command":"python3 -c "
+name = '강력한분析디비'
+for c in name:
+    print(repr(c), hex(ord(c)))
+""}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:10Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-6.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:17Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/13-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:18Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/20-3.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:27:19Z","state":"","data":{"command":"python3 -c "
+name = '강력한분석디비'
+for c in name:
+    print(repr(c), hex(ord(c)))
+""}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:28Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/15-6.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:31Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/02-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:32Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/21-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:43Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-7.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:45Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/16-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:53Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/02-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:27:58Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:05Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:13Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/13-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:20Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/07-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:20Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/02-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:26Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/21-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:34Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/08-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:37Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:41Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/16-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:48Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:28:56Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/02-5.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:29:08Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/" 2>/dev/null | head -5
+ls "/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/" 2>/dev/null | head -5"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:12Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/16-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:14Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:15Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:25Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/09-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:31Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/13-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:35Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:36Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/21-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:36Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/10-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:44Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/22-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:44Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/16-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:46Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:48Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/11-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:50Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/14-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:29:57Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/17-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:01Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:15Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/14-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:24Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/17-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:36Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-5.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:36Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/14-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:45Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/22-A.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:50Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/07-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:30:55Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/17-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:31:11Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/14-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:31:23Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/07-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:31:39Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/14-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:31:41Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/22-B.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:31:43Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/17-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:31:56Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/18-ch.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:05Z","state":"","data":{"command":"ls -lh /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/03-*.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04-*.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:08Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05-*.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06-*.md 2>/dev/null"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:32:08Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/07-3.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:11Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/05_함수완전정복.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/06_DDL과DML.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:22Z","state":"","data":{"command":"for f in 03-ch 03-1 03-2 03-3 03-4 03-5 03-6 03-7 04-ch 04-1 04-2 04-3 04-4; do
+  head -1 "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/${f}.md" 2>/dev/null || head -1 "/home/youly/Docume"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:28Z","state":"","data":{"command":"ls -lh "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/03_SQL기초.md" "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/04_데이터타입.md" 2>/dev/null || ls -lh "/home/youly/Documents/Book"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:32:28Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/14-5.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:32:35Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/22-C.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:36Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/1{2,3,4}*.md | sort"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:32:42Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/18-1.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:32:44Z","state":"","data":{"command":"grep -h "^# " /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-ch.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/12-1.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/p"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:32:48Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/08-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:33:27Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/08-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:33:33Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/18-2.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:33:35Z","state":"","data":{"command":"ls -la /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/20-*.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/21-*.md /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/22-"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:34:10Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/08-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:34:46Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/18-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:35:00Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/19-ch.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:35:16Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/09-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:35:37Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/19-1.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:35:47Z","state":"","data":{"command":"for f in 12-ch 12-1 12-2 12-3 12-4 13-ch 13-1 13-2 14-ch 14-1 14-2 14-3 14-4 14-5; do
+  head -1 "/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/${f}.md"
+done"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:35:49Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/09-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:36:15Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/19-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:36:37Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/09-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:36:55Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/19-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:37:13Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/10-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:37:45Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/10-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:37:46Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/19-4.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:37:54Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/1{5,6,7,8,9}-*.md 2>/dev/null | sort"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:38:19Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/10-3.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:39:09Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/10-4.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:39:57Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/11-1.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:40:31Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/11-2.md"}}
+{"id":"event-000001","type":"tool.write","ts":"2026-03-21T22:41:19Z","state":"","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/11-3.md"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:41:25Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/" | grep -E '^(07|08|09|10|11)-' | sort"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:44:11Z","state":"","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/1{5,6,7,8,9}_*.md 2>/dev/null"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:44:30Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/" | grep -E '^(07|08|09|10|11)_'"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:45:17Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/" | grep -E '\.(md)$' | grep -v '^[0-9][0-9]-' | sort"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:45:20Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/""}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:45:49Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/" 2>/dev/null | wc -l
+ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/" 2>/dev/null"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:45:57Z","state":"","data":{"command":"python3 -c "
+import os
+p1 = '/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages'
+p2 = '/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages'
+print('Path1 (Chinese 析) exists:', os.path.exis"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:46:06Z","state":"","data":{"command":"python3 -c "
+import shutil, os
+src_dir = '/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages'
+dst_dir = '/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages'
+files = os.listdir(src_dir)
+f"}}
+{"id":"event-000001","type":"tool.bash","ts":"2026-03-21T22:48:47Z","state":"","data":{"command":"ls "/home/youly/Documents/Book/02_DuckDB/강력한분析디비.DuckDB/pages/" 2>/dev/null | wc -l
+ls "/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/" | grep -E '^(07|08|09|10|11)-' | sort"}}

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"\\\\.csv\\\\|\\\\.parquet\\\\|\\\\.json\\\\|\\\\.xlsx\\\\|\\\\.zst\\\\|\\\\.gz\" /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/*.md)",
+      "Bash(grep \"\\\\.md$\")",
+      "Bash(for file:*)",
+      "Bash(do echo:*)"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+id	name	email	department	salary	hire_date	active
+1	Alice Kim	alice@company.com	Engineering	85000.0	2022-03-01	true
+2	Bob Lee	bob@company.com	Marketing	72000.0	2022-07-15	true
+3	Carol Park	carol@company.com	Engineering	95000.0	2021-11-01	true
+4	David Choi	david@company.com	HR	68000.0	2023-01-10	true
+5	Eve Jung	eve@company.com	Engineering	91000.0	2023-06-15	true
+6	Frank Oh	frank@company.com	Marketing	74000.0	2022-09-01	false
+7	Grace Yoon	grace@company.com	Engineering	89000.0	2021-05-20	true
+8	Henry Shin	henry@company.com	Finance	78000.0	2022-12-01	true
+9	Iris Han	iris@company.com	Finance	81000.0	2023-03-15	true
+10	Jake Moon	jake@company.com	HR	65000.0	2023-08-01	true

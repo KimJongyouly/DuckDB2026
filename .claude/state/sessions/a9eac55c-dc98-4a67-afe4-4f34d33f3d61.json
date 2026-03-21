@@ -1,0 +1,46 @@
+{
+  "session_id": "a9eac55c-dc98-4a67-afe4-4f34d33f3d61",
+  "parent_session_id": null,
+  "state": "stopped",
+  "state_version": 1,
+  "started_at": "2026-03-18T15:44:02Z",
+  "updated_at": "2026-03-18T15:46:39Z",
+  "resume_token": "41fa4549-7c4f-4845-beb2-383989aa25a3",
+  "event_seq": 3,
+  "last_event_id": "event-000003",
+  "fork_count": 0,
+  "orchestration": {
+    "max_state_retries": 3,
+    "retry_backoff_seconds": 10
+  },
+  "cwd": "/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB",
+  "project_name": "강력한분석디비.DuckDB",
+  "prompt_seq": 1,
+  "git": {
+    "branch": "(no git)",
+    "uncommitted_changes": 0,
+    "last_commit": "none"
+  },
+  "plans": {
+    "exists": false,
+    "last_modified": 0,
+    "wip_tasks": 0,
+    "todo_tasks": 0,
+    "pending_tasks": 0,
+    "completed_tasks": 0
+  },
+  "changes_this_session": [
+    {
+      "file": "TOC.md",
+      "action": "Write",
+      "timestamp": "2026-03-18T15:46:30Z",
+      "important": false
+    }
+  ],
+  "intent": "literal",
+  "last_message_length": 522,
+  "last_message_hash": "d97a00aa83030c50",
+  "ended_at": "2026-03-18T15:46:39Z",
+  "duration_minutes": 2,
+  "memory_logged": true
+}

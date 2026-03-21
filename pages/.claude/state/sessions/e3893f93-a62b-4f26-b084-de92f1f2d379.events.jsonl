@@ -1,0 +1,4 @@
+{"id":"event-000001","type":"session.start","ts":"2026-03-19T16:55:06Z","state":"initialized"}
+{"id":"event-000002","type":"tool.bash","ts":"2026-03-19T16:56:26Z","state":"initialized","data":{"command":"ls /home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/"}}
+{"id":"event-000003","type":"tool.write","ts":"2026-03-19T16:58:41Z","state":"initialized","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/pages/04_SQL기초.md"}}
+{"id":"event-000004","type":"session.stop","ts":"2026-03-19T16:58:50Z","state":"stopped"}
