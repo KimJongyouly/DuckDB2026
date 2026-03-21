@@ -1,3 +1,0 @@
-{"id":"event-000001","type":"session.start","ts":"2026-03-18T15:44:02Z","state":"initialized"}
-{"id":"event-000002","type":"tool.write","ts":"2026-03-18T15:46:30Z","state":"initialized","data":{"file_path":"/home/youly/Documents/Book/02_DuckDB/강력한분석디비.DuckDB/TOC.md"}}
-{"id":"event-000003","type":"session.stop","ts":"2026-03-18T15:46:39Z","state":"stopped"}
