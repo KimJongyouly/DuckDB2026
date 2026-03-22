@@ -1,207 +1,117 @@
 # 강력한 분석 DB, DuckDB — 목차
 
-## [들어가며](pages/00-ch.md)
-
----
-
-## 1부 — 시작하기
-    ### [제1장: 설치와 환경 구성](pages/01-ch.md)
-        #### [1.1 DuckDB 설치](pages/01-1.md)
-        #### [1.2 CLI로 첫 쿼리 실행하기](pages/01-2.md)
-        #### [1.3 DuckDB UI 소개](pages/01-3.md)
-
----
-
-    ### [제2장: DuckDB에 연결하기](pages/02-ch.md)
-        #### [2.1 커넥션 개념 이해](pages/02-1.md) 
-        #### [2.2 영구 모드 (Persistent Mode)](pages/02-2.md)
-        #### [2.3 인메모리 모드 (In-Memory Mode)](pages/02-3.md)
-        #### [2.4 디스크 스필링과 대용량 처리](pages/02-4.md)
-        #### [2.5 동시성 고려사항](pages/02-5.md)
----
-
-## 2부 — SQL 핵심
-    ### [제3장: SQL 기초 및 DuckDB 방언](pages/03-ch.md)
-        #### [3.1 DuckDB SQL 개요](pages/03-1.md)
-        #### [3.2 SELECT 문과 FROM / JOIN](pages/03-2.md)
-        #### [3.3 WHERE, GROUP BY, HAVING, ORDER BY, LIMIT](pages/03-3.md)
-        #### [3.4 서브쿼리와 CTE](pages/03-4.md)
-        #### [3.5 WINDOW 함수와 QUALIFY](pages/03-5.md)
-        #### [3.6 SAMPLE, UNNEST, VALUES](pages/03-6.md)
-        #### [3.7 집합 연산](pages/03-7.md)
-
----
-
-    ### [제4장: 데이터 타입](pages/04-ch.md)
-        #### [4.1 숫자, 텍스트, 불리언, 날짜/시간](pages/04-1.md)
-        #### [4.2 LIST, STRUCT, MAP, UNION](pages/04-2.md)
-        #### [4.3 ENUM, BLOB, ARRAY](pages/04-3.md)
-        #### [4.4 타입 캐스팅과 변환](pages/04-4.md)
-
----
-
-    ### [제5장: 함수 완전 정복](pages/05-ch.md)
-        #### [5.1 집계 함수](pages/05-1.md)
-        #### [5.2 문자열 함수](pages/05-2.md)
-        #### [5.3 날짜/시간 함수](pages/05-3.md)
-        #### [5.4 JSON 함수](pages/05-4.md)
-        #### [5.5 수학·통계 함수](pages/05-5.md)
-        #### [5.6 리스트·맵·구조체 함수](pages/05-6.md)
-        #### [5.7 윈도우 함수 심화](pages/05-7.md)
-
----
-
-    ### [제6장: DDL과 DML](pages/06-ch.md)
-        #### [6.1 테이블 생성·변경·삭제](pages/06-1.md)
-        #### [6.2 INSERT, UPDATE, DELETE, UPSERT](pages/06-2.md)
-        #### [6.3 인덱스와 제약조건](pages/06-3.md)
-        #### [6.4 뷰(VIEW)와 시퀀스](pages/06-4.md)
-        #### [6.5 트랜잭션과 VACUUM / ANALYZE](pages/06-5.md)
-
----
-
-## 3부 — 데이터 가져오기·내보내기
-    ### [제7장: CSV 파일](pages/07-ch.md)
-        #### [7.1 CSV 읽기](pages/07-1.md)
-        #### [7.2 손상된 CSV 처리](pages/07-2.md)
-        #### [7.3 CSV 쓰기와 옵션](pages/07-3.md)
-
----
-
-    ### [제8장: JSON 파일](pages/08-ch.md)
-        #### [8.1 JSON 읽기·쓰기](pages/08-1.md)
-        #### [8.2 JSON 타입과 함수](pages/08-2.md)
-        #### [8.3 중첩 JSON 펼치기](pages/08-3.md)
-
----
-
-    ### [제9장: Parquet 파일](pages/09-ch.md)
-        #### [9.1 Parquet 읽기·쓰기](pages/09-1.md)
-        #### [9.2 메타데이터 활용](pages/09-2.md)
-        #### [9.3 Parquet 암호화](pages/09-3.md)
-
----
-
-    ### [제10장: 다중 파일과 파티셔닝](pages/10-ch.md)
-        #### [10.1 와일드카드로 여러 파일 읽기](pages/10-1.md)
-        #### [10.2 스키마 통합](pages/10-2.md)
-        #### [10.3 Hive 파티셔닝](pages/10-3.md)
-        #### [10.4 파티션 쓰기](pages/10-4.md)
-
----
-
-    ### [제11장: 레이크하우스 포맷](pages/11-ch.md)
-        #### [11.1 Apache Iceberg](pages/11-1.md)
-        #### [11.2 Delta Lake](pages/11-2.md)
-        #### [11.3 INSERT 문과 Appender API](pages/11-3.md)
-
----
-
-## 4부 — 클라이언트 API
-
-    ### [제12장: Python과 DuckDB](pages/12-ch.md)
-        #### [12.1 설치 및 기본 연결](pages/12-1.md)
-        #### [12.2 Pandas / Polars / Arrow와 연동](pages/12-2.md)
-        #### [12.3 관계형 API (Relational API)](pages/12-3.md)
-        #### [12.4 Jupyter Notebook에서 활용](pages/12-4.md)
-
----
-
-    ### [제13장: CLI 심화](pages/13-ch.md)
-        #### [13.1 CLI 옵션과 설정](pages/13-1.md)
-        #### [13.2 스크립트 자동화](pages/13-2.md)
-
----
-
-    ### [제14장: 기타 클라이언트](pages/14-ch.md)
-        #### [14.1 Java (JDBC)](pages/14-1.md)
-        #### [14.2 Node.js](pages/14-2.md)
-        #### [14.3 Go, Rust, R](pages/14-3.md)
-        #### [14.4 ODBC / ADBC](pages/14-4.md)
-        #### [14.5 WebAssembly](pages/14-5.md)
-
----
-
-## 5부 — 확장과 생태계
-
-### [제15장: 핵심 확장 활용](pages/15-ch.md)
-#### [15.1 Extension 설치](pages/15-1.md)
-#### [15.2 httpfs: HTTP/S3 파일 직접 쿼리](pages/15-2.md)
-#### [15.3 AWS / Azure 연동](pages/15-3.md)
-#### [15.4 Spatial: 공간 데이터 분석](pages/15-4.md)
-#### [15.5 Full-Text Search](pages/15-5.md)
-#### [15.6 Excel 읽기](pages/15-6.md)
-
----
-
-### [제16장: 데이터베이스 연동](pages/16-ch.md)
-
-#### [16.1 PostgreSQL 연동](pages/16-1.md)
-
-#### [16.2 MySQL 연동](pages/16-2.md)
-
-#### [16.3 SQLite 연동](pages/16-3.md)
-
----
-
-## 6부 — 성능 최적화와 실전 운영
-
-### [제17장: 설정과 튜닝](pages/17-ch.md)
-
-#### [17.1 설정(Configuration) 개요](pages/17-1.md)
-
-#### [17.2 Pragmas 활용](pages/17-2.md)
-
-#### [17.3 Secrets Manager](pages/17-3.md)
-
----
-
-### [제18장: 성능 최적화](pages/18-ch.md)
-
-#### [18.1 실행 계획(EXPLAIN) 읽기](pages/18-1.md)
-
-#### [18.2 병렬 처리와 메모리 관리](pages/18-2.md)
-
-#### [18.3 대용량 데이터 처리 전략](pages/18-3.md)
-
----
-
-### [제19장: 운영 및 보안](pages/19-ch.md)
-
-#### [19.1 Docker로 배포하기](pages/19-1.md)
-
-#### [19.2 로깅과 모니터링](pages/19-2.md)
-
-#### [19.3 보안 고려사항](pages/19-3.md)
-
-#### [19.4 제한(Limits)과 트러블슈팅](pages/19-4.md)
-
----
-
-## 7부 — 실전 프로젝트
-
-### [제20장: 데이터 분석 파이프라인 구축](pages/20-ch.md)
-
-#### [20.1 로컬 데이터 레이크 만들기](pages/20-1.md)
-
-#### [20.2 S3 + Parquet + DuckDB 분석 환경](pages/20-2.md)
-
-#### [20.3 실시간 대시보드 연동](pages/20-3.md)
-
----
-
-### [제21장: DuckDB로 ML 전처리](pages/21-ch.md)
-
-#### [21.1 대용량 피처 엔지니어링](pages/21-1.md)
-
-#### [21.2 Python ML 파이프라인과 통합](pages/21-2.md)
-
----
-
-## [부록](pages/22-ch.md)
-
-### [A. SQL 빠른 참조 (Cheat Sheet)](pages/22-A.md)
-
-### [B. 주요 함수 레퍼런스](pages/22-B.md)
-
-### [C. 확장 목록과 설치 명령](pages/22-C.md)
+* [들어가며](pages/00-ch.md)
+* 1부 — 시작하기
+    * [제1장: 설치와 환경 구성](pages/01-ch.md)
+        * [1.1 DuckDB 설치](pages/01-1.md)
+        * [1.2 CLI로 첫 쿼리 실행하기](pages/01-2.md)
+        * [1.3 DuckDB UI 소개](pages/01-3.md)
+    * [제2장: DuckDB에 연결하기](pages/02-ch.md)
+        * [2.1 커넥션 개념 이해](pages/02-1.md)
+        * [2.2 영구 모드 (Persistent Mode)](pages/02-2.md)
+        * [2.3 인메모리 모드 (In-Memory Mode)](pages/02-3.md)
+        * [2.4 디스크 스필링과 대용량 처리](pages/02-4.md)
+        * [2.5 동시성 고려사항](pages/02-5.md)
+* 2부 — SQL 핵심
+    * [제3장: SQL 기초 및 DuckDB 방언](pages/03-ch.md)
+        * [3.1 DuckDB SQL 개요](pages/03-1.md)
+        * [3.2 SELECT 문과 FROM / JOIN](pages/03-2.md)
+        * [3.3 WHERE, GROUP BY, HAVING, ORDER BY, LIMIT](pages/03-3.md)
+        * [3.4 서브쿼리와 CTE](pages/03-4.md)
+        * [3.5 WINDOW 함수와 QUALIFY](pages/03-5.md)
+        * [3.6 SAMPLE, UNNEST, VALUES](pages/03-6.md)
+        * [3.7 집합 연산](pages/03-7.md)
+    * [제4장: 데이터 타입](pages/04-ch.md)
+        * [4.1 숫자, 텍스트, 불리언, 날짜/시간](pages/04-1.md)
+        * [4.2 LIST, STRUCT, MAP, UNION](pages/04-2.md)
+        * [4.3 ENUM, BLOB, ARRAY](pages/04-3.md)
+        * [4.4 타입 캐스팅과 변환](pages/04-4.md)
+    * [제5장: 함수 완전 정복](pages/05-ch.md)
+        * [5.1 집계 함수](pages/05-1.md)
+        * [5.2 문자열 함수](pages/05-2.md)
+        * [5.3 날짜/시간 함수](pages/05-3.md)
+        * [5.4 JSON 함수](pages/05-4.md)
+        * [5.5 수학·통계 함수](pages/05-5.md)
+        * [5.6 리스트·맵·구조체 함수](pages/05-6.md)
+        * [5.7 윈도우 함수 심화](pages/05-7.md)
+    * [제6장: DDL과 DML](pages/06-ch.md)
+        * [6.1 테이블 생성·변경·삭제](pages/06-1.md)
+        * [6.2 INSERT, UPDATE, DELETE, UPSERT](pages/06-2.md)
+        * [6.3 인덱스와 제약조건](pages/06-3.md)
+        * [6.4 뷰(VIEW)와 시퀀스](pages/06-4.md)
+        * [6.5 트랜잭션과 VACUUM / ANALYZE](pages/06-5.md)
+* 3부 — 데이터 가져오기·내보내기
+    * [제7장: CSV 파일](pages/07-ch.md)
+        * [7.1 CSV 읽기](pages/07-1.md)
+        * [7.2 손상된 CSV 처리](pages/07-2.md)
+        * [7.3 CSV 쓰기와 옵션](pages/07-3.md)
+    * [제8장: JSON 파일](pages/08-ch.md)
+        * [8.1 JSON 읽기·쓰기](pages/08-1.md)
+        * [8.2 JSON 타입과 함수](pages/08-2.md)
+        * [8.3 중첩 JSON 펼치기](pages/08-3.md)
+    * [제9장: Parquet 파일](pages/09-ch.md)
+        * [9.1 Parquet 읽기·쓰기](pages/09-1.md)
+        * [9.2 메타데이터 활용](pages/09-2.md)
+        * [9.3 Parquet 암호화](pages/09-3.md)
+    * [제10장: 다중 파일과 파티셔닝](pages/10-ch.md)
+        * [10.1 와일드카드로 여러 파일 읽기](pages/10-1.md)
+        * [10.2 스키마 통합](pages/10-2.md)
+        * [10.3 Hive 파티셔닝](pages/10-3.md)
+        * [10.4 파티션 쓰기](pages/10-4.md)
+    * [제11장: 레이크하우스 포맷](pages/11-ch.md)
+        * [11.1 Apache Iceberg](pages/11-1.md)
+        * [11.2 Delta Lake](pages/11-2.md)
+        * [11.3 INSERT 문과 Appender API](pages/11-3.md)
+* 4부 — 클라이언트 API
+    * [제12장: Python과 DuckDB](pages/12-ch.md)
+        * [12.1 설치 및 기본 연결](pages/12-1.md)
+        * [12.2 Pandas / Polars / Arrow와 연동](pages/12-2.md)
+        * [12.3 관계형 API (Relational API)](pages/12-3.md)
+        * [12.4 Jupyter Notebook에서 활용](pages/12-4.md)
+    * [제13장: CLI 심화](pages/13-ch.md)
+        * [13.1 CLI 옵션과 설정](pages/13-1.md)
+        * [13.2 스크립트 자동화](pages/13-2.md)
+    * [제14장: 기타 클라이언트](pages/14-ch.md)
+        * [14.1 Java (JDBC)](pages/14-1.md)
+        * [14.2 Node.js](pages/14-2.md)
+        * [14.3 Go, Rust, R](pages/14-3.md)
+        * [14.4 ODBC / ADBC](pages/14-4.md)
+        * [14.5 WebAssembly](pages/14-5.md)
+* 5부 — 확장과 생태계
+    * [제15장: 핵심 확장 활용](pages/15-ch.md)
+        * [15.1 Extension 설치](pages/15-1.md)
+        * [15.2 httpfs: HTTP/S3 파일 직접 쿼리](pages/15-2.md)
+        * [15.3 AWS / Azure 연동](pages/15-3.md)
+        * [15.4 Spatial: 공간 데이터 분석](pages/15-4.md)
+        * [15.5 Full-Text Search](pages/15-5.md)
+        * [15.6 Excel 읽기](pages/15-6.md)
+    * [제16장: 데이터베이스 연동](pages/16-ch.md)
+        * [16.1 PostgreSQL 연동](pages/16-1.md)
+        * [16.2 MySQL 연동](pages/16-2.md)
+        * [16.3 SQLite 연동](pages/16-3.md)
+* 6부 — 성능 최적화와 실전 운영
+    * [제17장: 설정과 튜닝](pages/17-ch.md)
+        * [17.1 설정(Configuration) 개요](pages/17-1.md)
+        * [17.2 Pragmas 활용](pages/17-2.md)
+        * [17.3 Secrets Manager](pages/17-3.md)
+    * [제18장: 성능 최적화](pages/18-ch.md)
+        * [18.1 실행 계획(EXPLAIN) 읽기](pages/18-1.md)
+        * [18.2 병렬 처리와 메모리 관리](pages/18-2.md)
+        * [18.3 대용량 데이터 처리 전략](pages/18-3.md)
+    * [제19장: 운영 및 보안](pages/19-ch.md)
+        * [19.1 Docker로 배포하기](pages/19-1.md)
+        * [19.2 로깅과 모니터링](pages/19-2.md)
+        * [19.3 보안 고려사항](pages/19-3.md)
+        * [19.4 제한(Limits)과 트러블슈팅](pages/19-4.md)
+* 7부 — 실전 프로젝트
+    * [제20장: 데이터 분석 파이프라인 구축](pages/20-ch.md)
+        * [20.1 로컬 데이터 레이크 만들기](pages/20-1.md)
+        * [20.2 S3 + Parquet + DuckDB 분석 환경](pages/20-2.md)
+        * [20.3 실시간 대시보드 연동](pages/20-3.md)
+    * [제21장: DuckDB로 ML 전처리](pages/21-ch.md)
+        * [21.1 대용량 피처 엔지니어링](pages/21-1.md)
+        * [21.2 Python ML 파이프라인과 통합](pages/21-2.md)
+* [부록](pages/22-ch.md)
+    * [A. SQL 빠른 참조 (Cheat Sheet)](pages/22-A.md)
+    * [B. 주요 함수 레퍼런스](pages/22-B.md)
+    * [C. 확장 목록과 설치 명령](pages/22-C.md)
