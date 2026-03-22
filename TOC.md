@@ -111,7 +111,7 @@
 * [제21장: DuckDB로 ML 전처리](pages/21-ch.md)
     * [21.1 대용량 피처 엔지니어링](pages/21-1.md)
     * [21.2 Python ML 파이프라인과 통합](pages/21-2.md)
-* [부록](pages/22-ch.md)
+* [제99장_부록](pages/22-ch.md)
     * [A. SQL 빠른 참조 (Cheat Sheet)](pages/22-A.md)
     * [B. 주요 함수 레퍼런스](pages/22-B.md)
     * [C. 확장 목록과 설치 명령](pages/22-C.md)
