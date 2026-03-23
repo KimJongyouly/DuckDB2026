@@ -13,7 +13,7 @@
     * [2.4 디스크 스필링과 대용량 처리](pages/02-4.md)
     * [2.5 동시성 고려사항](pages/02-5.md)
 * 2부 — SQL 핵심
-* [제03장: SQL 기초 및 DuckDB 방언](pages/03-ch.md)
+* [제03장: SQL 기초 및 DuckDB Dialect](pages/03-ch.md)
     * [3.1 DuckDB SQL 개요](pages/03-1.md)
     * [3.2 SELECT 문과 FROM / JOIN](pages/03-2.md)
     * [3.3 WHERE, GROUP BY, HAVING, ORDER BY, LIMIT](pages/03-3.md)
